@@ -3,7 +3,7 @@ include "biblio-standoc.rnc" {
 BibDataExtensionType =
   attribute schema-version { text }?,
         doctype, docsubtype?, flavor, horizontal?, function?, editorialgroup, ics*, structuredidentifier,
-        stagename?, updates_document_type?, accessibility-color-inside?, price-code?,
+        stagename?, updates_document_type?, price-code?, accessibility-color-inside?, 
         cen-processing?, secretary?, interest-to-committees?, tc-sc-officers-note?
 
 bdate = element date {
