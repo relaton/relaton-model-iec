@@ -18,8 +18,6 @@ element on { ISO8601Date | "--" | "–" }
 
 }
 
-organization = element organization { OrganizationType | IsoOrganizationType }
-
 DocumentType =
      "international-standard" | "technical-specification" |
      "technical-report" | "publicly-available-specification" |
@@ -85,5 +83,3 @@ secretary = element secretary { text }
 interest-to-committees = element interest-to-committees { text }
 tc-sc-officers-note = element tc-sc-officers-note { BasicBlock* }
 
-IsoOrganizationType =
-    technical-committee?, subcommittee?, workgroup?, secretariat?
