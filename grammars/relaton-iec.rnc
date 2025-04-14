@@ -63,6 +63,7 @@ ISOProjectGroup =
 approvalgroup = element approvalgroup { ISOProjectGroup }
 
 agency = element agency { text }
+fast_track = element fast-track { xsd:boolean }
 
 horizontal = element horizontal { xsd:boolean }
 
