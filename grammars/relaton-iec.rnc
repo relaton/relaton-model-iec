@@ -26,8 +26,6 @@ structuredidentifier =
     (documentnumber, tc-documentnumber? )
 }
 
-editorialgroup = element editorialgroup { ISOProjectGroup }
-
 }
 
 BibDataExtensionType &=
@@ -58,11 +56,6 @@ BibDataExtensionType &=
 
 updates_document_type = element updates-document-type { DocumentType }
 
-ISOProjectGroup =
-  agency*, technical-committee+, subcommittee*, workgroup*, secretariat?
-approvalgroup = element approvalgroup { ISOProjectGroup }
-
-agency = element agency { text }
 fast_track = element fast-track { xsd:boolean }
 
 horizontal = element horizontal { xsd:boolean }
@@ -81,15 +74,6 @@ tc-documentnumber =
   element tc-document-number {
     xsd:int
    }
-
-subcommittee =
-  element subcommittee { IsoWorkgroup }
-
-workgroup =
-  element workgroup { IsoWorkgroup }
-
-secretariat =
-  element secretariat { text }
 
 stagename = element stagename {
   attribute abbreviation { text }?,
